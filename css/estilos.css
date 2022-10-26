@@ -1,0 +1,253 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(27, 26, 26);
+    font-family: 'Teko', sans-serif;
+}
+.navbar{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(27, 26, 26)
+}
+img{
+    height: 40px;
+    width: auto;
+    margin-top: 10px;
+}
+
+nav a{
+    color: rgb(229, 229, 5);
+    text-decoration: none;
+    margin-right: 30px;
+}
+nav a:hover{
+    color: red;
+    text-decoration: underline;
+}
+.ingresar{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(27, 26, 26);
+    color: rgb(229, 229, 5);
+    border-color: beige;
+    border-radius: 4px;
+    margin: 2px;
+}
+.ingresar:hover{
+    background-color: beige;
+    color: red;
+    width: 150px;
+    cursor: pointer;
+}
+.lista{
+    color: rgb(229, 229, 5);
+    text-decoration: none;
+    
+}
+.lista:hover{
+    color: red;
+}
+.carrusel,
+.carrusel1,
+.carrusel2,
+.carrusel3{
+    margin-right: 60px;
+    margin-left: 80px;
+}
+
+.carrusel__contenedor,
+.carrusel__contenedor1,
+.carrusel__contenedor2,
+.carrusel__contenedor3{
+    position: relative;
+}
+
+.imagenLista,
+.imagenLista1,
+.imagenLista2,
+.imagenLista3{
+    width: 90%;
+    height: auto;
+    margin-left: 20px;
+    border-radius: 8px;
+
+}
+
+.carousel__anterior,
+.carousel__siguiente,
+.carousel__anterior1,
+.carousel__siguiente1,
+.carousel__anterior2,
+.carousel__siguiente2,
+.carousel__anterior3,
+.carousel__siguiente3 {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 40px;
+    border: none;
+    top: calc(50% ) ;
+    text-align: center;
+    background-color: rgb(27, 26, 26);
+    color: ghostwhite;
+
+    
+}
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover,
+.carousel__anterior1:hover,
+.carousel__siguiente1:hover
+.carousel__anterior2:hover,
+.carousel__siguiente2:hover
+.carousel__anterior3:hover,
+.carousel__siguiente3:hover{
+    opacity: 20%;
+}
+.carousel__anterior,
+.carousel__anterior1,
+.carousel__anterior2,
+.carousel__anterior3{
+    left: -30px;
+}
+.carousel__siguiente,
+.carousel__siguiente1,
+.carousel__siguiente2,
+.carousel__siguiente3{
+    right: -15px;
+}
+.glider-dot,
+.glider-dot1,
+.glider-dot2,
+.glider-dot3{
+    display: block;
+    width: 40px;
+    height: 4px;
+    background-color: #fff;
+    opacity: .2;
+    border-radius: 0;
+}
+.glider-dot:hover,
+.glider-dot1:hover,
+.glider-dot2:hover,
+.glider-dot3:hover{
+    opacity: .5;
+}
+
+
+.carrusel__hijo{
+    background-color: rgba(10, 9, 9, 0.234);
+    width: 100%;
+    display: block;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+}
+.tituloPelicula{
+    color: #fff;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.reproducir,
+.agregar{
+    background-color: rgb(27, 26, 26);
+    color:  rgb(229, 229, 5) ;
+
+}
+.carrusel__hijo:hover{
+    opacity: 1;
+
+}
+.personajes{
+    display: flex;
+    padding-left: 2rem;
+    padding-bottom: 10px;
+    padding-top: 30px;
+    justify-content: stretch;
+    
+}
+.personajesTitulo{
+    display: flex;
+    color: rgb(229, 229, 5);
+    text-align: center;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.personajesImg{
+
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid silver;
+    object-fit: cover;
+    overflow: hidden;
+    margin-left: -5px;
+}
+.personajesImg:hover{
+    width: 100px;
+    height: 110px;
+    cursor: crosshair;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: 1s;
+}
+.informacion{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(229, 229, 5);
+    margin-left: 20px;
+    margin-top: 20px;
+    
+}
+.informacion p{
+    color: red;
+    font-size: 20px;
+}
+
+.footer{
+    height: 120px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.tituloFooter{
+    padding-top: 20px;
+    color: rgb(229, 229, 5) ;
+}
+.fab .fa-brands .fa-twitter
+.fab .fa-brands .fa-instagram
+.fab .fa-brands .fa-facebook-f{
+height: 30px;
+}
+@media (max-width: 768px ){
+    .personajes{
+        width: 100%;
+        
+    }
+    .personajesImg{
+        width: 50px;
+        height: 50px;
+    }
+    .personajesImg:hover{
+        width: 60px;
+        height: 60px;
+    }
+    .personajesTitulo{
+        font-size: 20px;
+    }
+}
