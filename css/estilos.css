@@ -229,10 +229,9 @@ nav a:hover{
     padding-top: 20px;
     color: rgb(229, 229, 5) ;
 }
-.fab .fa-brands .fa-twitter
-.fab .fa-brands .fa-instagram
-.fab .fa-brands .fa-facebook-f{
-height: 30px;
+.redes{
+    height: 50px;
+    width: auto;
 }
 @media (max-width: 768px ){
     .personajes{
