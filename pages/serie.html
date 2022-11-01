@@ -16,8 +16,13 @@
     <header class="barraNav">
          <nav class="navegador">
             <a class="logo__Nav" href="#"><img src="../img/logo.png" alt=""></a>
-            <button class="navegadorToggle"><i class="fas fa-bars"></i></button>
-            <ul class="navegadorMenu ">
+            <!--
+                Acá te conviene trabajar con un id porque tanto navegadorToggle como navegadorMenu
+                son elementos únicos en tu página. Además es más sencillo agregar un listener en
+                javascript cuando trabajás con id.
+            -->
+            <button class="navegadorToggle" id="navegadorToggle"><i class="fas fa-bars"></i></button>
+            <ul class="navegadorMenu" id="navegadorMenu">
                 <li class="navegador__item navegador.link_active"><a href="../index.html" class="navegador__link">INICIO</a>
 
                 </li>

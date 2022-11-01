@@ -1,8 +1,10 @@
 window.addEventListener('load',function(){
     /**
-     * @obs Acá podés utilizar un array de ids en vez de crearte tantas clases distintas.
-     * Esto simplifica tu html, tu css y tu javascript.
-     * Luego hacés un bucle en los ids y creas los carouseles adentro de cada iteración del bucle "forEach"
+     * @obs Acá podés utilizar un array de ids en vez de crearte tantas clases distintas en tu html
+     * y luego en tu css y en tu javascript. Esto va a simplificar tu código en todos los archivos.
+     *
+     * Luego, hacés un bucle en los ids para crear los carouseles adentro de cada ejecución del
+     * bucle "forEach", como sigue:
     */
     const carruseles = ['#carrusel1', '#carrusel2', '#carrusel3', '#carrusel4'];
     carruseles.forEach(carruselId => {
