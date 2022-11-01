@@ -17,11 +17,16 @@ body{
     align-items: center;
     background-color: rgb(27, 26, 26)
 }
-img{
+/*
+    @obs acá comenté tus estilos para img porque esto afectaría a todas las imágenes de tu sitio, por ejemplo el logo en el encabezado.
+    No entendí del todo a qué imagenes querías aplicar estos estilos, pero te recomendaría un selector decendiente (ej: .listado img)
+    para sólo afectar las imágenes que querés modificar.
+*/
+/* img {
     height: 40px;
     width: auto;
     margin-top: 10px;
-}
+} */
 
 nav a{
     color: rgb(229, 229, 5);
@@ -50,30 +55,21 @@ nav a:hover{
 .lista{
     color: rgb(229, 229, 5);
     text-decoration: none;
-    
+
 }
 .lista:hover{
     color: red;
 }
-.carrusel,
-.carrusel1,
-.carrusel2,
-.carrusel3{
+.carrusel {
     margin-right: 60px;
     margin-left: 80px;
 }
 
-.carrusel__contenedor,
-.carrusel__contenedor1,
-.carrusel__contenedor2,
-.carrusel__contenedor3{
+.carrusel__contenedor {
     position: relative;
 }
 
-.imagenLista,
-.imagenLista1,
-.imagenLista2,
-.imagenLista3{
+.imagenLista {
     width: 90%;
     height: auto;
     margin-left: 20px;
@@ -82,13 +78,7 @@ nav a:hover{
 }
 
 .carousel__anterior,
-.carousel__siguiente,
-.carousel__anterior1,
-.carousel__siguiente1,
-.carousel__anterior2,
-.carousel__siguiente2,
-.carousel__anterior3,
-.carousel__siguiente3 {
+.carousel__siguiente {
     position: absolute;
     display: block;
     width: 30px;
@@ -99,35 +89,20 @@ nav a:hover{
     background-color: rgb(27, 26, 26);
     color: ghostwhite;
 
-    
+
 }
 
 .carousel__anterior:hover,
-.carousel__siguiente:hover,
-.carousel__anterior1:hover,
-.carousel__siguiente1:hover
-.carousel__anterior2:hover,
-.carousel__siguiente2:hover
-.carousel__anterior3:hover,
-.carousel__siguiente3:hover{
+.carousel__siguiente:hover {
     opacity: 20%;
 }
-.carousel__anterior,
-.carousel__anterior1,
-.carousel__anterior2,
-.carousel__anterior3{
+.carousel__anterior {
     left: -30px;
 }
-.carousel__siguiente,
-.carousel__siguiente1,
-.carousel__siguiente2,
-.carousel__siguiente3{
+.carousel__siguiente {
     right: -15px;
 }
-.glider-dot,
-.glider-dot1,
-.glider-dot2,
-.glider-dot3{
+.glider-dot {
     display: block;
     width: 40px;
     height: 4px;
@@ -135,10 +110,7 @@ nav a:hover{
     opacity: .2;
     border-radius: 0;
 }
-.glider-dot:hover,
-.glider-dot1:hover,
-.glider-dot2:hover,
-.glider-dot3:hover{
+.glider-dot:hover {
     opacity: .5;
 }
 
@@ -165,9 +137,16 @@ nav a:hover{
 .agregar{
     background-color: rgb(27, 26, 26);
     color:  rgb(229, 229, 5) ;
+    /* @obs Te recomiendo un poco de padding acá */
+    padding: 4px 10px;
 
 }
-.carrusel__hijo:hover{
+/*
+    @obs: recomiendo que el hover sea sobre el padre,
+    así cualquier parte de la peli que se haga hover
+    aparece el título y los botones.
+*/
+.carrusel__imagen:hover .carrusel__hijo{
     opacity: 1;
 
 }
@@ -177,7 +156,7 @@ nav a:hover{
     padding-bottom: 10px;
     padding-top: 30px;
     justify-content: stretch;
-    
+
 }
 .personajesTitulo{
     display: flex;
@@ -211,7 +190,7 @@ nav a:hover{
     color: rgb(229, 229, 5);
     margin-left: 20px;
     margin-top: 20px;
-    
+
 }
 .informacion p{
     color: red;
@@ -236,7 +215,7 @@ nav a:hover{
 @media (max-width: 768px ){
     .personajes{
         width: 100%;
-        
+
     }
     .personajesImg{
         width: 50px;
